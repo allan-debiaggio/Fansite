@@ -11,10 +11,10 @@ News
 
 HZ's Page :
 Biography (Home)
-Movies
-Rewards
-Upcoming
-News
+Movies (clapperboard icon)
+Music (trebleclef icon)
+Rewards (oscar icon)
+Upcoming / News (newspaper icon)
 
 CM's Page :
 Biography(Home)
