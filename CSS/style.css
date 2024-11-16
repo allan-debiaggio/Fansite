@@ -1,0 +1,233 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary: #5375e2;  /* Main blue color */
+    --secondary: #f65868; /* Accent pink */
+    --dark-grey: #5c616e; /* Dark grey for text */
+    --grey: #7791a1;      /* Lighter grey */
+    --white: #fff;        /* White color */
+    --black: #000;        /* Black color */
+    --logo-font: "Poppins", sans-serif;
+    --text-font: "Roboto", sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+    font-family: var(--text-font);
+    background-color: #f4f4f4;
+}
+h1, h2, h5 {
+    color: var(--primary);
+}
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%; padding: 10px;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: var(--secondary);
+}
+#home {
+    background: url("../Images/cinema.jpg") no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+}
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#home h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#home button {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#home button:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+#about {
+    padding: 50px 20px;
+    text-align: center;
+}
+#about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.about-text {
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+}
+#register {
+    background-color: var(--primary);
+    padding: 50px 20px;
+    text-align: center;
+    color: var(--white);
+}
+#register h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.register-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+}
+.input-group input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+button[type="submit"] {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+    background-color: var(--primary);
+}
+#actors {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e2e2e2;
+}
+.actor-card {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+}
+.actor-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.actor-card h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+footer .social-icons {
+    margin-top: 10px;
+}
+footer .social-icons i {
+    font-size: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+footer .social-icons i:hover {
+    color: var(--secondary);
+}
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    #home h5 {
+        font-size: 1.2rem;
+    }
+    .about-text {
+        font-size: 1rem;
+        padding: 0 10%;
+    }
+    .register-container {
+        width: 90%;
+    }
+    .actor-card {
+        width: 45%;
+        margin: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar ul {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+        font-size: 2rem;
+        color: var(--primary);
+        cursor: pointer;
+    }
+    #home h1 {
+        font-size: 2rem;
+    }
+    #home h5 {
+        font-size: 1.1rem;
+    }
+    #home button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .about-text {
+        font-size: 1rem;
+        padding: 0 5%;
+    }
+    .actor-card {
+        width: 100%;
+    }
+}

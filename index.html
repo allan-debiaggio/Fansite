@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanSite</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Images/fav.png">
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#register">S'enregistrer</a></li>
+                <li><a href="#actors">Acteurs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div>
+            <h1>FanSite</h1>
+            <h5>Un site pour les fans de ces grands acteurs.</h5>
+            <a href="#register"><button>Newsletter</button></a>
+            <a href="#about">↓</a>
+        </div>
+    </section>
+    <section id="about">
+        <h1>À propos</h1>
+        <p>Cillian Murphy est un acteur irlandais connu pour ses rôles dans des films comme *28 jours plus tard* et *Batman Begins*.</p>
+    </section>
+    <section id="register">
+        <h1>S'enregistrer</h1>
+        <form>
+            <label for="fname">Prénom:</label>
+            <input id="fname" type="text" placeholder="Teva">
+
+            <label for="lname">Nom:</label>
+            <input id="lname" type="text" placeholder="Parra">
+
+            <label for="username">Surnom:</label>
+            <input id="username" type="text" placeholder="tevap">
+
+            <label for="email">Adresse Mail:</label>
+            <input id="email" type="email" placeholder="info@teva.in">
+
+            <label for="createPassword">Créer un mot de passe:</label>
+            <input id="createPassword" type="password" placeholder="8 - 20 caractères">
+
+            <label for="reTypePassword">Retapez le mot de passe:</label>
+            <input id="reTypePassword" type="password" placeholder="8 - 20 caractères">
+
+            <label for="country">Pays:</label>
+            <input id="country" type="text" placeholder="Ex: France">
+
+            <label for="phone">Numéro de téléphone:</label>
+            <input id="phone" type="text" placeholder="Ex: +33 6 21 45 65 51">
+
+            <label for="terms">
+                <input id="terms" type="checkbox"> Accepter les termes et conditions
+            </label>
+
+            <button type="submit">Se Connecter</button>
+        </form>
+    </section>
+    <section id="actors">
+        <h1>Acteurs</h1>
+        <div>
+            <div>
+                <img src="./Images/Nolan_No_Font.png" alt="Christopher Nolan" height="350">
+                <h2>Christopher Nolan</h2>
+            </div>
+            <div>
+                <img src="./Images/Cillian_Murphy_No_Font.png" alt="Cillian Murphy" height="350">
+                <h2>Cillian Murphy</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
