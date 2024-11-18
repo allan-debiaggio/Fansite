@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary: #5375e2;
+    --secondary: #f65868;
+    --dark-grey: #5c616e;
+    --white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+}
+h1, h2, h5 {
+    color: var(--primary);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: var(--secondary);
+}
+#top-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.left-side, .right-side {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+.actor-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.about-text {
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+#news, #achievements {
+    padding: 50px 20px;
+    text-align: center;
+}
+.news-item, .achievements-list {
+    background-color: var(--white);
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.news-item h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.news-item p {
+    color: var(--dark-grey);
+    line-height: 1.6;
+}
+.news-item a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 10px;
+}
+.news-item a:hover {
+    color: var(--secondary);
+}
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+footer .social-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+footer .social-links a:hover {
+    color: var(--secondary);
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    #top-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .left-side, .right-side {
+        flex: none;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .actor-details img {
+        max-width: 80%;
+    }
+    .about-text {
+        font-size: 1rem;
+        padding: 0 10%;
+    }
+    .video-container iframe {
+        max-width: 90%;
+    }
+    .news-item {
+        padding: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar ul {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+        font-size: 2rem;
+        color: var(--primary);
+        cursor: pointer;
+    }
+    footer .social-links a {
+        font-size: 1.2rem;
+    }
+}
