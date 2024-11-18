@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffefe0; /* Warm, light background */
+    color: #4a2c2a; /* Warm, earthy text color */
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: #b54d4d; /* Warm red for headers */
+}
+
+a {
+    text-decoration: none;
+    color: #b54d4d;
+}
+
+a:hover {
+    color: #ff8c42; /* Highlight link with bright orange */
+}
+
+/* Header Styles */
+header {
+    background-color: #d77a61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #b54d4d;
+    border-radius: 0 0 50% 50%;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #ff8c42;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4a2c2a;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff3e4; /* Slightly warmer background for sections */
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background: #ffe3cc; /* Warm orange for list items */
+    border-radius: 25px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #b54d4d;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 50px 50px 0 0;
+}
+
+/* Circle Shapes for Decorative Touch */
+header h1 {
+    font-size: 3em;
+    background-color: #ff8c42;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    background-color: #d77a61;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+nav a {
+    padding: 10px 15px;
+    border-radius: 25px;
+}
