@@ -1,0 +1,111 @@
+html
+{
+    background-color:white;
+    font-family: Arial;
+}
+header
+{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    flex-grow:unset;
+    align-items:center;
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    background-color:transparent;
+    height: 50px;
+}
+footer
+{
+    width: 100%;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    text-align: center;
+}
+.home_icon, .bio_icon, .clapperboard_icon,
+.awards_icon, .news_icon, .contact_icon,
+.christopher_nolan_icon, .cilian_murphy_icon
+{
+    border-radius: 50%;
+}
+#title,h1,h2
+{
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Brush Script MT';
+    font-size: 32px;
+}
+#bio_section
+{
+width: 48%;
+border-style: solid;
+border-color: grey;
+border-width: 2px;
+border-radius: 5px;
+box-shadow: 0 0 10px;
+}
+#biography
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hz_photo
+{
+    width:48%; 
+    height:48%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+#biography, #movies, #awards, #news, #links
+{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:15px;
+}
+#movies_section,#awards_section,#news_section, #links_section
+{
+width: 98%;
+border-style: solid;
+border-color: grey;
+border-width: 2px;
+border-radius: 5px;
+box-shadow: 0 0 10px;
+}
+.wikipedia_logo_small
+{
+    width: 30%;
+}
+.wikipedia_logo
+{
+    width: 15%;
+    vertical-align: middle;
+}
+.logo_part, .video_part
+{
+    text-align: center;
+}
+#google_logo, #youtube_logo, #github_logo
+{
+    width: 10%;
+    vertical-align: middle;
+}
+#youtube_video
+{
+    width:50%;
+    height: 75%;
+}
+#twitter_logo, #instagram_logo, #facebook_logo
+{
+    width: 5%;
+    vertical-align: middle;
+}
+#links_div
+{
+    text-align: center;
+}

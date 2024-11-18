@@ -10,11 +10,12 @@ Upcoming
 News
 
 HZ's Page :
-Biography (Home)
+Biography (Home icon)
 Movies (clapperboard icon)
 Music (trebleclef icon)
 Rewards (oscar icon)
 Upcoming / News (newspaper icon)
+index (main page)
 
 CM's Page :
 Biography(Home)
